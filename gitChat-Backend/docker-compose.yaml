@@ -7,9 +7,9 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 0000
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
-      - gitchat_pg_data:/var/lb/postgresql/data
+      - gitchat_pg_data:/var/lib/postgresql/data
       - ./docker/postgres/init-extensions.sql:/docker-entrypoint-initdb.d/01-extensions.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d gitchat"]

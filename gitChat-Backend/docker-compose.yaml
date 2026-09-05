@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: gitchat-postgres
+    environment:
+      POSTGRES_DB: gitchat
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 0000
+    ports:
+      - "5432:5432"
+    volumes:
+      - gitchat_pg_data:/var/lb/postgresql/data
+      - ./docker/postgres/init-extensions.sql:/docker-entrypoint-initdb.d/01-extensions.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gitchat"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  gitchat_pg_data:
+

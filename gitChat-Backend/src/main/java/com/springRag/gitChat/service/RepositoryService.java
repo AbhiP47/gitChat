@@ -6,8 +6,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import com.springRag.gitChat.dto.RepositoryResponse;
+import com.springRag.gitChat.entity.IndexStatusResponse;
 import com.springRag.gitChat.entity.Repository;
 import com.springRag.gitChat.entity.User;
+import com.springRag.gitChat.exceptions.NotFoundException;
 import com.springRag.gitChat.repository.RepositoryRepository;
 import com.springRag.gitChat.service.github.GithubApiClient;
 import org.springframework.stereotype.Service;

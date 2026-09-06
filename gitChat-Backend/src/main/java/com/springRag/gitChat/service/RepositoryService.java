@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class RepoService {
+public class RepositoryService {
     private final RepositoryRepository repositoryRepository;
     private final UserService userService;
     private final GithubApiClient gitHubApiClient;

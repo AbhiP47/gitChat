@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.IntStream;
 
+import com.springRag.gitChat.service.ai.RagSettings;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.beans.factory.annotation.Value;

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import com.springRag.gitChat.dto.RepositoryResponse;
-import com.springRag.gitChat.entity.IndexStatusResponse;
+import com.springRag.gitChat.dto.IndexStatusResponse;
 import com.springRag.gitChat.entity.Repository;
 import com.springRag.gitChat.security.CurrentUser;
 import com.springRag.gitChat.service.RepositoryService;

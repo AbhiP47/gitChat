@@ -1,4 +1,4 @@
-package com.springRag.gitChat.entity;
+package com.springRag.gitChat.dto;
 
 import com.springRag.gitChat.enums.IndexStatus;
 
